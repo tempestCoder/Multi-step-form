@@ -1,0 +1,1232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsla(206, 94%, 87%, 0.3);
+  display: flex;
+  place-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.steps {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+.stepOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 33px;
+}
+
+.stepOne .num1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(206, 94%, 87%);
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.stepOne .contentOne h6 {
+  color: rgb(190, 187, 187);
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.stepOne .contentOne p {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.stepTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.stepTwo .num2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(206, 94%, 87%);
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.stepTwo .contentTwo h6 {
+  color: rgb(190, 187, 187);
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.stepTwo .contentTwo p {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.stepThree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.stepThree .num3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(206, 94%, 87%);
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.stepThree .contentThree h6 {
+  color: rgb(190, 187, 187);
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.stepThree .contentThree p {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.stepFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 38px;
+}
+
+.stepFour .num4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(206, 94%, 87%);
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.stepFour .contentFour h6 {
+  color: rgb(190, 187, 187);
+  font-weight: 100;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.stepFour .contentFour p {
+  color: #fff;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 700px;
+  height: 450px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.side-imageContainer {
+  width: 220px;
+  height: 430px;
+  border-radius: 5px;
+}
+
+.sideImage {
+  border-radius: 5px;
+  height: 430px;
+}
+
+.formContainer {
+  height: 430px;
+  width: 350px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 30px;
+}
+
+.formContainer form {
+  transition: 0.5s;
+}
+
+/* FORM 1 */
+
+.formOne {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: absolute;
+}
+
+.personalInfo h2 {
+  font-family: sans-serif;
+  margin-bottom: 4px;
+  color: #02295a;
+}
+
+.personalInfo h4 {
+  color: gray;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+form.formOne {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.name p {
+  color: #02295a;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+div.name input {
+  border: 1px solid hsla(0, 0%, 50%, 0.6);
+  outline: none;
+  padding: 8px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+div.name input::placeholder {
+  color: hsla(0, 0%, 50%, 0.6);
+}
+
+div.email p {
+  color: #02295a;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+div.email input {
+  border: 1px solid hsla(0, 0%, 50%, 0.6);
+  outline: none;
+  padding: 8px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+div.email input::placeholder {
+  color: hsla(0, 0%, 50%, 0.6);
+}
+
+div.number p {
+  color: #02295a;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+div.number input {
+  border: 1px solid hsla(0, 0%, 50%, 0.6);
+  outline: none;
+  padding: 8px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+div.number input::placeholder {
+  color: hsla(0, 0%, 50%, 0.6);
+}
+
+div.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.infoBtn {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #02295a;
+  border: none;
+}
+
+/* FORM 2 */
+.formTwo {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-family: sans-serif;
+  position: absolute;
+  top: 410px;
+}
+
+.selectPlan h2 {
+  color: #02295a;
+  margin-bottom: 3px;
+}
+
+.selectPlan h4 {
+  color: hsla(0, 0%, 50%, 0.7);
+  font-size: 12px;
+  font-weight: 200;
+}
+
+div.plans {
+  display: flex;
+  gap: 10px;
+}
+
+div.plans #arcade {
+  width: 100px;
+  aspect-ratio: 1/1.1;
+  border: 1px solid hsla(0, 0%, 50%, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#arcade img {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 30px;
+}
+
+#arcade h5 {
+  margin-top: 24px;
+  margin-left: 10px;
+  color: #02295a;
+  font-weight: 600;
+}
+
+#arcade p {
+  margin-top: 2px;
+  margin-left: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+#arcade .freeDuration1 {
+  display: none;
+  margin-top: 5px;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: 200;
+}
+
+div.plans #advanced {
+  width: 100px;
+  aspect-ratio: 1/1.1;
+  border: 1px solid hsla(0, 0%, 50%, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#advanced img {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 30px;
+}
+
+#advanced h5 {
+  margin-top: 24px;
+  margin-left: 10px;
+  color: #02295a;
+  font-weight: 600;
+}
+
+#advanced p {
+  margin-top: 2px;
+  margin-left: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+#advanced .freeDuration2 {
+  display: none;
+  margin-top: 5px;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: 200;
+}
+
+div.plans #pro {
+  width: 100px;
+  aspect-ratio: 1/1.1;
+  border: 1px solid hsla(0, 0%, 50%, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#pro img {
+  margin-top: 8px;
+  margin-left: 8px;
+  width: 30px;
+}
+
+#pro h5 {
+  margin-top: 24px;
+  margin-left: 10px;
+  color: #02295a;
+  font-weight: 700;
+}
+
+#pro p {
+  margin-top: 2px;
+  margin-left: 10px;
+  color: gray;
+  font-size: 12px;
+}
+
+#pro .freeDuration3 {
+  display: none;
+  margin-top: 5px;
+  font-size: 11px;
+  margin-bottom: 4px;
+  font-weight: 200;
+}
+
+.monthYearPlan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: hsla(0, 0%, 50%, 0.1);
+  width: 320px;
+  border-radius: 5px;
+}
+
+.monthYearPlan input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.monthYearPlan label {
+  display: block;
+  background-color: #02295a;
+  border-radius: 80px;
+  border: 1px solid transparent;
+  width: 27px;
+  height: 16px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.monthYearPlan label::before {
+  content: "";
+  background-color: #fff;
+  width: 9px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  margin-left: 1px;
+  transition: transform 0.5s;
+}
+
+#toggler:checked + label::before {
+  transform: translateX(145%);
+}
+
+.monthYearPlan .month {
+  margin-right: 10px;
+  color: #02295a;
+}
+
+.monthYearPlan .year {
+  margin-left: 10px;
+}
+
+.return {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: gray;
+  background-color: transparent;
+  border: none;
+}
+
+.planBtn {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #02295a;
+  border: none;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+/* Form 3 */
+.formThree {
+  margin-top: 30px;
+  position: absolute;
+  top: 430px;
+}
+
+.add-ons h2 {
+  color: #02295a;
+}
+
+.add-ons h4 {
+  color: hsla(0, 0%, 50%, 0.5);
+  font-size: 13px;
+  font-weight: 200;
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.addChoices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.online-service {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-radius: 5px;
+  padding: 13px;
+}
+
+.online-service .online {
+  width: 13px;
+  height: 13px;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.online-service p#onlinepriceContainer {
+  margin-left: 90px;
+  color: blue;
+  font-size: 12px;
+}
+
+#choiceInfo1 .p1 {
+  color: #02295a;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 15px;
+}
+#choiceInfo1 .p2 {
+  color: hsl(0, 0%, 50%);
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.large-storage {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-radius: 5px;
+  padding: 13px;
+}
+
+#choiceInfo2 .p3 {
+  color: #02295a;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 15px;
+}
+#choiceInfo2 .p4 {
+  color: hsl(0, 0%, 50%);
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.large-storage .storagepriceContainer {
+  margin-left: 115px;
+  color: blue;
+  font-size: 12px;
+}
+
+.customProfile {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsla(0, 0%, 50%, 0.5);
+  border-radius: 5px;
+  padding: 13px;
+}
+
+#choiceInfo3 .p5 {
+  color: #02295a;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 15px;
+}
+#choiceInfo3 .p6 {
+  color: hsl(0, 0%, 50%);
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.customProfile .custompriceContainer {
+  margin-left: 90px;
+  color: blue;
+  font-size: 12px;
+}
+
+.btn3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+
+.return2 {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: gray;
+  background-color: transparent;
+  border: none;
+}
+
+.addBtn {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #02295a;
+  border: none;
+}
+
+/* FORM 4 */
+.formFour {
+  position: absolute;
+  top: 430px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.finishUp h2 {
+  color: #02295a;
+}
+
+.finishUp h4 {
+  color: hsl(0, 0%, 50%);
+  font-size: 13px;
+  font-weight: 200;
+  margin-top: 5px;
+}
+
+section.calculateOptions {
+  background-color: hsla(0, 0%, 50%, 0.1);
+  height: 150px;
+  width: 340px;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.chosenPlan {
+  display: flex;
+}
+
+.chosenPlan h5 {
+  margin-right: 130px;
+  color: #02295a;
+  font-weight: 700;
+}
+
+.chosenPlan > div {
+  color: #021833;
+  font-size: small;
+  font-weight: 900;
+}
+
+button.change {
+  background: transparent;
+  border: none;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+  color: gray;
+}
+
+.chosenAdd {
+  border-top: 2px solid hsla(0, 0%, 50%, 0.1);
+}
+
+.firstAdd {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chosenAdd .firstAdd h5 {
+  color: hsla(0, 0%, 50%);
+  font-weight: 300;
+  margin-top: 8px;
+  margin-right: 150px;
+}
+
+.chosenAdd .firstAdd span {
+  margin-top: 5px;
+  color: #02295a;
+  font-size: small;
+}
+
+.chosenAdd .secondAdd {
+  display: flex;
+}
+
+.chosenAdd .secondAdd h5 {
+  color: hsla(0, 0%, 50%);
+  font-weight: 300;
+  margin-top: 8px;
+  margin-right: 150px;
+}
+
+.chosenAdd .secondAdd span {
+  margin-top: 5px;
+  color: #02295a;
+  font-size: small;
+}
+
+.btn4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.return3 {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: gray;
+  background-color: transparent;
+  border: none;
+}
+
+.finishBtn {
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: hsl(243, 100%, 62%);
+  border: none;
+}
+
+.Total {
+  color: gray;
+  font-size: 15px;
+  display: flex;
+}
+
+.Total > div {
+  color: hsl(243, 59%, 51%);
+  margin-left: 140px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#thanksMessage {
+  position: absolute;
+  margin-top: 10%;
+  text-align: center;
+  margin-right: 50px;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#thanksMessage h1 {
+  color: #02295a;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 25px;
+}
+
+#thanksMessage h4 {
+  color: gray;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(228, 81%, 94%);
+  }
+
+  .container {
+    display: flex;
+    gap: 13px;
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .formContainer {
+    height: 430px;
+    width: 370px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-right: 30px;
+  }
+
+  .formContainer form {
+    transition: 0.5s;
+  }
+
+  .formOne {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    position: absolute;
+  }
+
+  div.name input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 330px;
+    border-radius: 5px;
+  }
+
+  div.email input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 330px;
+    border-radius: 5px;
+  }
+
+  div.number input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 330px;
+    border-radius: 5px;
+  }
+
+  div.btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button.infoBtn {
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #02295a;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-color: hsl(228, 81%, 94%);
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    gap: 0px;
+    left: 120px;
+  }
+
+  .stepOne .num1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+  .stepTwo .num2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin-left: -20px;
+    transition: 0.5s;
+  }
+  .stepThree .num3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 20px;
+    transition: 0.5s;
+  }
+  .stepFour .num4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(206, 94%, 87%);
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+
+  .stepOne .contentOne h6 {
+    display: none;
+  }
+
+  .stepOne .contentOne p {
+    display: none;
+  }
+  .stepTwo .contentTwo h6 {
+    display: none;
+  }
+
+  .stepTwo .contentTwo p {
+    display: none;
+  }
+  .stepThree .contentThree h6 {
+    display: none;
+  }
+
+  .stepThree .contentThree p {
+    display: none;
+  }
+  .stepFour .contentFour h6 {
+    display: none;
+  }
+
+  .stepFour .contentFour p {
+    display: none;
+  }
+
+  .side-imageContainer {
+    width: 100%;
+    height: 150px;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .sideImage {
+    height: 1250px;
+    transform: translateY(-900px);
+  }
+
+  .formContainer {
+    height: 400px;
+    width: 83%;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-right: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    margin-left: 25px;
+    overflow: hidden;
+  }
+
+  .formOne {
+    margin-top: 35px;
+    margin-left: 30px;
+    display: flex;
+    width: 85%;
+    aspect-ratio: 1/0.8;
+    flex-direction: column;
+    gap: 45px;
+    position: absolute;
+  }
+
+  div.name input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  div.email input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  div.number input {
+    border: 1px solid hsla(0, 0%, 50%, 0.6);
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .formTwo {
+    margin-left: 35px;
+    margin-top: 25px;
+    width: 85%;
+  }
+
+  div.plans {
+    display: flex;
+    gap: 10px;
+  }
+
+  div.plans #arcade {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 1px solid hsla(0, 0%, 50%, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  div.plans #advanced {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 1px solid hsla(0, 0%, 50%, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  div.plans #pro {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 1px solid hsla(0, 0%, 50%, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #arcade img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+  }
+  #advanced img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+  }
+  #pro img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 30px;
+  }
+
+  #arcade h5 {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #02295a;
+    font-weight: 600;
+  }
+  #advanced h5 {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #02295a;
+    font-weight: 600;
+  }
+  #pro h5 {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #02295a;
+    font-weight: 600;
+  }
+
+  .monthYearPlan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: hsla(0, 0%, 50%, 0.1);
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .formThree {
+    margin-left: 35px;
+    margin-top: 8px;
+    width: 85%;
+  }
+
+  .btn3 {
+    margin-top: 25px;
+  }
+
+  .formFour {
+    margin-left: 35px;
+    width: 85%;
+  }
+
+  #calculateOptions {
+    width: 100%;
+  }
+
+  .Total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #thanksMessage {
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 80%;
+  }
+
+  .btn2 {
+    margin-top: 30px;
+  }
+
+  .online-service {
+    justify-content: space-between;
+  }
+
+  .large-storage {
+    justify-content: space-between;
+  }
+
+  .customProfile {
+    justify-content: space-between;
+  }
+
+  .chosenPlan {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .firstAdd {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .secondAdd {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* JS class */
+
+.chosen {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsla(243, 100%, 62%, 0.1);
+}
+
+.stepStyle {
+  background-color: hsl(206, 94%, 87%);
+}

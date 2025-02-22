@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="side-imageContainer" class="side-imageContainer">
+        <img
+          id="sideImage"
+          class="sideImage"
+          src="images/bg-sidebar-desktop.svg"
+        />
+
+        <div id="steps" class="steps">
+          <div id="stepOne" class="stepOne">
+            <div id="num1" class="num1">1</div>
+            <div id="contentOne" class="contentOne">
+              <h6>STEP 1</h6>
+              <p>YOUR INFO</p>
+            </div>
+          </div>
+          <div id="stepTwo" class="stepTwo">
+            <div id="num2" class="num2">2</div>
+            <div id="contentTwo" class="contentTwo">
+              <h6>STEP 2</h6>
+              <p>SELECT PLAN</p>
+            </div>
+          </div>
+          <div id="stepThree" class="stepThree">
+            <div id="num3" class="num3">3</div>
+            <div id="contentThree" class="contentThree">
+              <h6>STEP 3</h6>
+              <p>SELECT ADD-ONS</p>
+            </div>
+          </div>
+          <div id="stepFour" class="stepFour">
+            <div id="num4" class="num4">4</div>
+            <div id="contentFour" class="contentFour">
+              <h6>STEP 4</h6>
+              <p>SUMMARY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="formContainer" class="formContainer">
+        <form id="formOne" class="formOne">
+          <div id="personalInfo" class="personalInfo">
+            <h2>Personal info</h2>
+            <h4>Please provide your name,email address, and phone number.</h4>
+          </div>
+
+          <div id="name" class="name">
+            <p>Name</p>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="e.g. John Doe"
+              required
+            />
+          </div>
+          <div id="email" class="email">
+            <p>Email Address</p>
+            <input
+              id="email"
+              name="Email"
+              type="email"
+              placeholder="e.g.Johndoe@gmail.com"
+              required
+            />
+          </div>
+          <div id="number" class="number">
+            <p>Phone Number</p>
+            <input
+              id="number"
+              name="phone-number"
+              type="number"
+              placeholder="e.g. +234 51 2467 9843"
+              required
+            />
+          </div>
+
+          <div id="btn" class="btn">
+            <button id="infoBtn" class="infoBtn">Next step</button>
+          </div>
+        </form>
+
+        <form id="formTwo" class="formTwo">
+          <div id="selectPlan" class="selectPlan">
+            <h2>Select your Plan</h2>
+            <h4>You have the option of yearly or monthly billing.</h4>
+          </div>
+
+          <div id="plans" class="plans">
+            <div id="arcade" class="arcade">
+              <img src="images/icon-arcade.svg" />
+              <h5>Arcade</h5>
+              <p id="price1Container" class="price1Container">
+                $<span id="price1">9</span
+                ><span id="frequencyChange1">/mo</span>
+              </p>
+              <h5 id="freeDuration1" class="freeDuration1"></h5>
+            </div>
+            <div id="advanced" class="advanced">
+              <img src="images/icon-advanced.svg" />
+              <h5>Advanced</h5>
+              <p id="price2Container" class="price2Container">
+                $<span id="price2">12</span
+                ><span id="frequencyChange2">/mo</span>
+              </p>
+              <h5 id="freeDuration2" class="freeDuration2"></h5>
+            </div>
+            <div id="pro" class="pro">
+              <img src="images/icon-pro.svg" />
+              <h5>Pro</h5>
+              <p id="price3Container" class="price3Container">
+                $<span id="price3">15</span
+                ><span id="frequencyChange3">/mo</span>
+              </p>
+              <h5 id="freeDuration3" class="freeDuration3"></h5>
+            </div>
+          </div>
+
+          <div id="monthYearPlan" class="monthYearPlan">
+            <h6 class="month" id="month">Monthly</h6>
+            <div id="toggleContainer">
+              <input id="toggler" type="checkbox" />
+              <label for="toggler"></label>
+            </div>
+            <h6 class="year" id="year">Yearly</h6>
+          </div>
+
+          <div id="btn2" class="btn2">
+            <button type="button" id="return" class="return">Go Back</button>
+
+            <button type="button" id="planBtn" class="planBtn">
+              Next step
+            </button>
+          </div>
+        </form>
+
+        <form id="formThree" class="formThree">
+          <div id="add-ons" class="add-ons">
+            <h2>Pick add-ons</h2>
+            <h4>Add-ons help enhance your gaming experience.</h4>
+          </div>
+
+          <div id="addChoices" class="addChoices">
+            <section id="online-service" class="online-service">
+              <div>
+                <input type="checkbox" id="online" />
+              </div>
+              <div id="choiceInfo1">
+                <p class="p1">Online service</p>
+                <p class="p2">Access to multiplayer games</p>
+              </div>
+              <p id="onlinepriceContainer">
+                +$<span id="onlineprice">1</span
+                ><span id="frequency1">/mo</span>
+              </p>
+            </section>
+
+            <section id="large-storage" class="large-storage">
+              <div>
+                <input type="checkbox" id="storage" />
+              </div>
+              <div id="choiceInfo2">
+                <p class="p3">Larger storage</p>
+                <p class="p4">Extra 1TB of cloud save</p>
+              </div>
+              <p id="storagepriceContainer" class="storagepriceContainer">
+                +$<span id="storageprice">2</span
+                ><span id="frequency2">/mo</span>
+              </p>
+            </section>
+
+            <section id="customProfile" class="customProfile">
+              <div>
+                <input type="checkbox" id="profile" />
+              </div>
+              <div id="choiceInfo3">
+                <p class="p5">Customizable profile</p>
+                <p class="p6">custom theme on your profile</p>
+              </div>
+
+              <p id="custompriceContainer" class="custompriceContainer">
+                +$<span id="customprice">2</span
+                ><span id="frequency3">/mo</span>
+              </p>
+            </section>
+          </div>
+
+          <div id="btn3" class="btn3">
+            <button type="button" id="return2" class="return2">Go Back</button>
+
+            <button type="button" id="addBtn" class="addBtn">Next step</button>
+          </div>
+        </form>
+
+        <form id="formFour" class="formFour">
+          <div id="finishUp" class="finishUp">
+            <h2>Finishing up</h2>
+            <h4>Double-check everything looks OK before confirming.</h4>
+          </div>
+
+          <section id="calculateOptions" class="calculateOptions">
+            <div class="chosenPlan" id="chosenPlan">
+              <h5 id="plan">Arcade<span id="monthly">(Monthly)</span></h5>
+              <div>
+                $<span id="pricePerPlan"></span><span id="frequency6">/mo</span>
+              </div>
+            </div>
+            <button type="button" class="change">change</button>
+            <div id="chosenAdd" class="chosenAdd">
+              <div id="firstAdd" class="firstAdd">
+                <h5 id="chosenAdd1">Online service</h5>
+                <span>
+                  +$<span id="pricePerAdd">1</span
+                  ><span id="frequency4"
+                    ><span id="frequency7">/mo</span></span
+                  ></span
+                >
+              </div>
+              <div id="secondAdd" class="secondAdd">
+                <h5 id="chosenAdd2">Larger storage</h5>
+                <span>
+                  +$<span id="pricePerAdd2">2</span
+                  ><span id="frequency5"
+                    ><span id="frequency8">/mo</span></span
+                  ></span
+                >
+              </div>
+            </div>
+          </section>
+
+          <div id="Total" class="Total">
+            <h5>Total <span id="planBased">(per month)</span></h5>
+            <div>
+              +$<span id="totalDisplay"></span
+              ><span id="frequency9" class="frequency9">/mo</span>
+            </div>
+          </div>
+
+          <div id="btn4" class="btn4">
+            <button type="button" id="return3" class="return3">Go Back</button>
+
+            <button type="button" id="finishBtn" class="finishBtn">
+              Confirm
+            </button>
+          </div>
+        </form>
+
+        <form id="formFive">
+          <div id="thanksMessage">
+            <img src="images/icon-thank-you.svg" />
+            <h1>Thank you!</h1>
+            <h4>
+              Thanks for confirming your subscription! we hope you have fun
+              using our platform. If you need support, Please feel free to email
+              us at kamaldeenomotolani@gmail.com
+            </h4>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
